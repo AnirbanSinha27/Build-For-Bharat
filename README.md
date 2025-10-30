@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MGNREGA District Performance Dashboard
 
-## Getting Started
+The **MGNREGA District Performance Dashboard** is a web application designed to make government data on the **Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)** easily accessible and understandable for citizens — especially those in rural India with low technical literacy.
 
-First, run the development server:
+## 🌍 Project Overview
 
+The Government of India provides open APIs for the monthly performance of districts under the MGNREGS program. However, these datasets are often difficult for the general public to interpret or access directly.
+
+This project solves that problem by visualizing MGNREGA data through an intuitive, localized, and mobile-friendly dashboard. Citizens can easily:
+- View their district’s current performance metrics.
+- Compare monthly or yearly trends.
+- Understand key statistics through simple charts and visuals.
+- (Optional) Automatically detect their district using geolocation.
+
+---
+
+## 🧭 Objectives
+
+- Enable **transparent access** to MGNREGA data for all citizens.
+- Design a **simple, intuitive interface** that caters to low-literacy users.
+- Ensure **data availability and reliability**, even when APIs are down.
+- Create a **production-ready, scalable** web app deployable for large-scale national use.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 14 (React + TypeScript)
+- **Styling:** Tailwind CSS, Lucide React Icons
+- **Charts:** Recharts
+- **API Integration:** MGNREGA Open API (data.gov.in)
+- **Backend (optional):** Node.js/Express for caching and failover
+- **Database:** MongoDB (for storing and caching API data)
+- **Hosting:** Deployed on a VPS/VM environment
+
+---
+
+## ⚙️ Features
+
+- 🔍 **District Selection:** Choose your state and district to view localized data.
+- 📊 **Interactive Charts:** Monthly and yearly performance comparisons.
+- 🕒 **Historical Data View:** Explore past performance trends.
+- 📈 **Comparison Dashboard:** Compare your district’s progress with others.
+- 📡 **Offline Cache & Failover:** Handles API downtime gracefully.
+- 📍 **Geo-detection (Bonus):** Automatically detects user’s district via geolocation.
+- 🌐 **Responsive Design:** Works seamlessly on both desktop and mobile.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/AnirbanSinha27/mgnrega-dashboard.git
+cd mgnrega-dashboard
